@@ -1,131 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleNest | Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <!-- Day 3: Trending Collections -->
-        <section class="trending">
+    <!-- Announcement -->
+    <div class="announcement">
+        ✨ Welcome to StyleNest — Discover Your Everyday Style!
+    </div>
 
-            <h2>Trending Collections</h2>
-            <p class="section-subtitle">
-                Explore the latest fashion trends
-            </p>
+    <!-- Header -->
+    <header class="header">
+        <a href="#home" class="logo">Style<span>Nest</span></a>
 
-            <div class="trending-grid">
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#men">Men</a>
+            <a href="#women">Women</a>
+            <a href="#kids">Kids</a>
+            <a href="#home-living">Home & Living</a>
+            <a href="#beauty">Beauty</a>
+        </nav>
 
-                <article class="trending-card">
-                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80"
-                        alt="Women's fashion trends">
-                    <div class="trending-content">
-                        <h3>Women's Fashion</h3>
-                        <a href="#women">Explore Now</a>
-                    </div>
-                </article>
+        <div class="header-actions">
+            <input type="search" placeholder="Search for products">
+            <a href="#account">Account</a>
+            <a href="#wishlist">Wishlist</a>
+            <a href="#bag">Bag</a>
+        </div>
+    </header>
 
-                <article class="trending-card">
-                    <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80"
-                        alt="Men's fashion trends">
-                    <div class="trending-content">
-                        <h3>Men's Collection</h3>
-                        <a href="#men">Explore Now</a>
-                    </div>
-                </article>
-
-                <article class="trending-card">
-                    <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=600&q=80"
-                        alt="Kids fashion trends">
-                    <div class="trending-content">
-                        <h3>Kids' Collection</h3>
-                        <a href="#kids">Explore Now</a>
-                    </div>
-                </article>
-
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">NEW SEASON • NEW STYLE</p>
+                <h1>Discover Your<br>Own Style</h1>
+                <p>Fashion that makes you feel confident, comfortable and beautiful.</p>
+                <a href="#categories" class="btn">Explore Collection</a>
             </div>
-
         </section>
 
-        <!-- Day 3: New Arrivals -->
-        <section class="new-arrivals" id="new-arrivals">
+        <!-- Categories -->
+        <section class="section" id="categories">
+            <div class="section-heading">
+                <p class="eyebrow">EXPLORE STYLE</p>
+                <h2>Shop By Category</h2>
+                <p>Find something special for every part of your life.</p>
+            </div>
 
-            <h2>New Arrivals</h2>
-            <p class="section-subtitle">
-                Discover the latest additions to StyleNest
-            </p>
+            <div class="category-grid">
+                <a href="#men" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=700" alt="Men's fashion">
+                    <span>Men</span>
+                </a>
+                <a href="#women" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=700" alt="Women's fashion">
+                    <span>Women</span>
+                </a>
+                <a href="#kids" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1503919005314-30d93d07d823?w=700" alt="Kids fashion">
+                    <span>Kids</span>
+                </a>
+                <a href="#home-living" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700" alt="Home decor">
+                    <span>Home & Living</span>
+                </a>
+                <a href="#beauty" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=700" alt="Beauty products">
+                    <span>Beauty</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="section soft-bg" id="featured">
+            <div class="section-heading">
+                <p class="eyebrow">HANDPICKED FOR YOU</p>
+                <h2>Featured Products</h2>
+                <p>Our favourites, selected just for you.</p>
+            </div>
 
             <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1548624149-f3b1b3b7b5b5?w=700" alt="Women's casual outfit">
+                        <span class="tag">Popular</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Women's Casual Outfit</h3>
+                        <p>Everyday collection</p>
+                        <strong>₹899</strong> <del>₹1,499</del>
+                        <a href="#bag" class="small-btn">Add to Bag</a>
+                    </div>
+                </article>
 
                 <article class="product-card">
-                    <div class="product-label">NEW</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=700" alt="Classic t-shirt">
+                        <span class="tag">Bestseller</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic T-Shirt</h3>
+                        <p>Comfort wear</p>
+                        <strong>₹599</strong> <del>₹999</del>
+                        <a href="#bag" class="small-btn">Add to Bag</a>
+                    </div>
+                </article>
 
-                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=500&q=80"
-                        alt="Women's fashion top">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=700" alt="Women's footwear">
+                    </div>
+                    <div class="product-info">
+                        <h3>Elegant Footwear</h3>
+                        <p>Step out in style</p>
+                        <strong>₹1,199</strong> <del>₹1,799</del>
+                        <a href="#bag" class="small-btn">Add to Bag</a>
+                    </div>
+                </article>
 
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=700" alt="Fashion handbag">
+                    </div>
+                    <div class="product-info">
+                        <h3>Everyday Handbag</h3>
+                        <p>Modern accessories</p>
+                        <strong>₹999</strong> <del>₹1,499</del>
+                        <a href="#bag" class="small-btn">Add to Bag</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Trending Collections -->
+        <section class="section" id="trending">
+            <div class="section-heading">
+                <p class="eyebrow">THE STYLE EDIT</p>
+                <h2>Trending Collections</h2>
+                <p>Explore the looks everyone is talking about.</p>
+            </div>
+
+            <div class="trending-grid">
+                <a href="#women" class="trending-card">
+                    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=900" alt="Women's collection">
+                    <div class="trending-content">
+                        <h3>Women's Fashion</h3>
+                        <span>Explore Now →</span>
+                    </div>
+                </a>
+
+                <a href="#men" class="trending-card">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=900" alt="Men's collection">
+                    <div class="trending-content">
+                        <h3>Men's Collection</h3>
+                        <span>Explore Now →</span>
+                    </div>
+                </a>
+
+                <a href="#kids" class="trending-card">
+                    <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=900" alt="Kids collection">
+                    <div class="trending-content">
+                        <h3>Kids' Collection</h3>
+                        <span>Explore Now →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- New Arrivals -->
+        <section class="section soft-bg" id="new-arrivals">
+            <div class="section-heading">
+                <p class="eyebrow">JUST LANDED</p>
+                <h2>New Arrivals</h2>
+                <p>Fresh styles to update your wardrobe.</p>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=700" alt="Casual top">
+                        <span class="tag">NEW</span>
+                    </div>
                     <div class="product-info">
                         <h3>Stylish Casual Top</h3>
-                        <p>Perfect for everyday fashion</p>
-                        <p class="price">₹699 <del>₹1,299</del></p>
-                        <p class="discount">46% OFF</p>
+                        <p>Women's wear</p>
+                        <strong>₹799</strong> <del>₹1,299</del>
+                        <a href="#bag" class="small-btn">Add to Bag</a>
                     </div>
                 </article>
 
                 <article class="product-card">
-                    <div class="product-label">NEW</div>
-
-                    <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=500&q=80"
-                        alt="Men's casual wear">
-
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?w=700" alt="Men's shirt">
+                        <span class="tag">NEW</span>
+                    </div>
                     <div class="product-info">
                         <h3>Men's Casual Shirt</h3>
-                        <p>Comfortable and stylish</p>
-                        <p class="price">₹899 <del>₹1,499</del></p>
-                        <p class="discount">40% OFF</p>
+                        <p>Men's wear</p>
+                        <strong>₹999</strong> <del>₹1,599</del>
+                        <a href="#bag" class="small-btn">Add to Bag</a>
                     </div>
                 </article>
 
                 <article class="product-card">
-                    <div class="product-label">NEW</div>
-
-                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=500&q=80"
-                        alt="Women's footwear">
-
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=700" alt="Fashion shoes">
+                        <span class="tag">NEW</span>
+                    </div>
                     <div class="product-info">
-                        <h3>Classic Women's Heels</h3>
-                        <p>Elegant everyday footwear</p>
-                        <p class="price">₹1,499 <del>₹2,499</del></p>
-                        <p class="discount">40% OFF</p>
+                        <h3>Classic Women's Shoes</h3>
+                        <p>Footwear</p>
+                        <strong>₹1,299</strong> <del>₹1,899</del>
+                        <a href="#bag" class="small-btn">Add to Bag</a>
                     </div>
                 </article>
 
                 <article class="product-card">
-                    <div class="product-label">NEW</div>
-
-                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=500&q=80"
-                        alt="Fashion handbag">
-
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=700" alt="Elegant handbag">
+                        <span class="tag">NEW</span>
+                    </div>
                     <div class="product-info">
                         <h3>Elegant Handbag</h3>
-                        <p>A perfect fashion accessory</p>
-                        <p class="price">₹1,199 <del>₹1,999</del></p>
-                        <p class="discount">40% OFF</p>
+                        <p>Accessories</p>
+                        <strong>₹1,099</strong> <del>₹1,699</del>
+                        <a href="#bag" class="small-btn">Add to Bag</a>
                     </div>
                 </article>
-
             </div>
-
         </section>
 
-        <!-- Day 3: Shopping Benefits -->
-        <section class="shopping-benefits">
-
-            <div class="benefit-item">
-                <h3>Free Delivery</h3>
-                <p>Free shipping on selected orders</p>
+        <!-- Offers -->
+        <section class="offer-banner">
+            <div>
+                <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+                <h2>Refresh Your Wardrobe</h2>
+                <p>Explore fresh styles and find your next favourite look.</p>
+                <a href="#new-arrivals" class="btn light-btn">Shop New Arrivals</a>
             </div>
-
-            <div class="benefit-item">
-                <h3>Easy Returns</h3>
-                <p>Convenient return experience</p>
-            </div>
-
-            <div class="benefit-item">
-                <h3>Secure Shopping</h3>
-                <p>A safe shopping experience</p>
-            </div>
-
         </section>
+
+        <!-- Shopping Benefits -->
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">THE STYLENEST PROMISE</p>
+                <h2>A Better Shopping Experience</h2>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🚚</div>
+                    <h3>Free Delivery</h3>
+                    <p>Convenient delivery on your orders.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">↩</div>
+                    <h3>Easy Returns</h3>
+                    <p>A simple and convenient return experience.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🔒</div>
+                    <h3>Secure Shopping</h3>
+                    <p>A shopping experience designed with care.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Static Wishlist -->
+        <section class="section account-section" id="wishlist">
+            <div class="section-heading">
+                <p class="eyebrow">YOUR FAVOURITES</p>
+                <h2>My Wishlist ♡</h2>
+                <p>Your favourite styles, all in one place.</p>
+            </div>
+            <div class="empty-panel">
+                <div class="large-icon">♡</div>
+                <h3>Your wishlist is waiting</h3>
+                <p>Products you love can be collected here.</p>
+                <a href="#featured" class="btn">Explore Products</a>
+            </div>
+        </section>
+
+        <!-- Static Bag -->
+        <section class="section account-section soft-bg" id="bag">
+            <div class="section-heading">
+                <p class="eyebrow">READY WHEN YOU ARE</p>
+                <h2>Shopping Bag</h2>
+                <p>Review your selected items here.</p>
+            </div>
+            <div class="empty-panel">
+                <div class="large-icon">🛍</div>
+                <h3>Your bag is currently empty</h3>
+                <p>Discover something you would love to wear.</p>
+                <a href="#new-arrivals" class="btn">Continue Shopping</a>
+            </div>
+        </section>
+
+        <!-- Static Orders -->
+        <section class="section account-section" id="orders">
+            <div class="section-heading">
+                <p class="eyebrow">YOUR SHOPPING HISTORY</p>
+                <h2>My Orders</h2>
+                <p>Keep track of your shopping journey.</p>
+            </div>
+            <div class="empty-panel">
+                <div class="large-icon">📦</div>
+                <h3>No orders to display</h3>
+                <p>Your order history will appear here in a connected shopping website.</p>
+                <a href="#categories" class="btn">Start Shopping</a>
+            </div>
+        </section>
+
+        <!-- Static Account -->
+        <section class="section account-section soft-bg" id="account">
+            <div class="section-heading">
+                <p class="eyebrow">WELCOME TO STYLENEST</p>
+                <h2>My Account</h2>
+                <p>Your personal shopping space.</p>
+            </div>
+            <div class="account-panel">
+                <div class="account-avatar">S</div>
+                <h3>Hello, Fashion Lover!</h3>
+                <p>Sign-in and profile features can be connected in a future version.</p>
+                <div class="account-links">
+                    <a href="#orders">My Orders →</a>
+                    <a href="#wishlist">My Wishlist →</a>
+                    <a href="#bag">Shopping Bag →</a>
+                </div>
+                <a href="#home" class="btn">Back to Home</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <a href="#home" class="logo footer-logo">Style<span>Nest</span></a>
+                <p>Discover fashion that reflects your personality. Your style, your story.</p>
+            </div>
+
+            <div>
+                <h3>Shop</h3>
+                <a href="#men">Men</a>
+                <a href="#women">Women</a>
+                <a href="#kids">Kids</a>
+                <a href="#beauty">Beauty</a>
+            </div>
+
+            <div>
+                <h3>Your Account</h3>
+                <a href="#account">My Account</a>
+                <a href="#orders">My Orders</a>
+                <a href="#wishlist">Wishlist</a>
+                <a href="#bag">Shopping Bag</a>
+            </div>
+
+            <div>
+                <h3>Explore</h3>
+                <a href="#trending">Trending</a>
+                <a href="#new-arrivals">New Arrivals</a>
+                <a href="#featured">Featured Products</a>
+                <a href="#categories">Categories</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2026 StyleNest Fashion Store. All rights reserved.</p>
+            <p>Designed with ♡ for fashion lovers.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
